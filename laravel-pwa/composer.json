@@ -1,0 +1,32 @@
+{
+    "name": "lewis/laravel-pwa",
+    "description": "Weather From API",
+    "type": "library",
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": ">=5.4",
+        "guzzlehttp/guzzle": "7.5.x-dev"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lewis"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Lewis\\LaravelPwa\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "\\Lewis\\LaravelPwa\\PwaServiceProvider"
+            ],
+            "aliases": {
+                "LaravelPwa": "Lewis\\LaravelPwa\\LaravelPwa"
+            }
+        }
+    }
+}
